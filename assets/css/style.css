@@ -1,11 +1,17 @@
 header {
-    background: url(../images/stone.jpg);
+    background: url(../images/slate2.jpg);
     background-size: cover;
     background-position: center;
     min-height: 1000px;
 }
 
+body {
+    background: black;
+    font-family: 'Cinzel', serif;
+}
+
 .section {
+    background: rgba(11, 31, 49, 0.178);
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
