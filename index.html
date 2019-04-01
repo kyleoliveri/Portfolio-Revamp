@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- GOOGLE FONT -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -29,22 +32,36 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#photos">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#photos">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="container white-text center">
+            <div class="row">
+                <div class="col s12 l12">
+                    <h2>Hi, I'm Kyle.</h2>
+                    <h5>I am a web developer.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l8">
+                    <p>Heck</p>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="container section" id="photos">
+    <section class="container section scrollspy" id="photos">
         <div class="row">
             <div class="col s12 l4">
-                <img src="assets/images/crystalCollector.jpg" alt="" class="responsive-img">
+                <img src="assets/images/crystalCollector.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 offset-l1">
                 <h2 class="white-text">Crystal Collector</h2>
@@ -53,7 +70,7 @@
         </div>
         <div class="row">
             <div class="col s12 l4 push-l7 offset-l1">
-                <img src="assets/images/nomad.jpg" alt="" class="responsive-img">
+                <img src="assets/images/nomad.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 pull-l5 right-align offset-l1">
                 <h2 class="white-text">Nomad</h2>
@@ -62,7 +79,7 @@
         </div>
         <div class="row">
             <div class="col s12 l4">
-                <img src="assets/images/train.jpg" alt="" class="responsive-img">
+                <img src="assets/images/train.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 offset-l1">
                 <h2 class="white-text">Train Schedule</h2>
@@ -89,6 +106,8 @@
         $(document).ready(function(){
             $(".sidenav").sidenav();
             $(".parallax").parallax();
+            $('.materialboxed').materialbox();
+            $('.scrollspy').scrollSpy();
         });
     </script>
 
