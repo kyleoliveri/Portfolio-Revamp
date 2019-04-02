@@ -24,16 +24,18 @@
 
     <!-- HEADER -->
     <header>
-        <nav class="nav-wrapper transparent">
+        <nav class="nav-wrapper black opac">
             <div class="container">
-                <a href="" class="brand-logo">Kyle Oliveri</a>
+                
                 <a href="" class="sidenav-trigger" data-target="mobile-menu">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li>|</li>
                     <li><a href="#photos">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li>|</li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#">About Me</a></li>
@@ -43,29 +45,44 @@
             </div>
         </nav>
 
-        <div class="container white-text center">
+        <div class="container white-text center section" id="aboutMe">
             <div class="row">
-                <div class="col s12 l12">
-                    <h2>Hi, I'm Kyle.</h2>
-                    <h5>I am a web developer.</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 l8">
-                    <p>Heck</p>
+                <div class="col s12 l12 trans">
+                    <div class="push">
+                    <h3>Kyle Oliveri</h3>
+                    <h6>Web Developer | kyle.a.oliveri@gmail.com | (925) 784-3554</h6>
+                    <a href="https://www.linkedin.com/in/kyle-oliveri-b1b807115/" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/kyleoliveri" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kyle_oliveri/" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="assets/images/Resume - Kyle Oliveri 2019.pdf" target="_blank" class="white-text">
+                        <i class="fontAwesome fas fa-file-pdf fa-2x"></i>
+                    </a>
+                    <br>
+                    <p>Hi, my name is Kyle and I am a web developer based in Los Angeles, CA. I have a passion for web design and developing applications for the web. Please get in touch with me if you have any questions!</p>
+                    <a href="#contact" class="waves-effect waves-light" id="contactBtn">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="container section scrollspy" id="photos">
+
+    <section class="container section scrollspy opac" id="photos">
         <div class="row">
             <div class="col s12 l4">
                 <img src="assets/images/crystalCollector.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 offset-l1">
+                <a href="https://kyleoliveri.github.io/Unit-4-Game/" target="_blank" class="appLink">
                 <h2 class="white-text">Crystal Collector</h2>
-                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda facere illum velit cupiditate quasi, ut ad, nesciunt dolore recusandae aliquid unde est saepe! Officiis adipisci dolor mollitia ipsam totam numquam!</p>
+                </a>
+                <p class="white-text">This is a JavaScript-based web application I created called Crystal Collector. In this game, a random number is generated and random values are applied to each of the four crystals. It is up to the user to add up their total to equal the randomly generated number.</p>
             </div>
         </div>
         <div class="row">
@@ -73,8 +90,10 @@
                 <img src="assets/images/nomad.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <a href="https://kyleoliveri.github.io/Group-Project-1/" target="_blank" class="appLink">
                 <h2 class="white-text">Nomad</h2>
-                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda facere illum velit cupiditate quasi, ut ad, nesciunt dolore recusandae aliquid unde est saepe! Officiis adipisci dolor mollitia ipsam totam numquam!</p>
+                </a>
+                <p class="white-text">Nomad is a one-stop-shop solution for anyone traveling. The user can search any city and Nomad will display the current weather, recent news articles regarding the city, and any events through Ticketmaster. This web application was developed with a team and uses Javascript, Firebase, and APIs.</p>
             </div>
         </div>
         <div class="row">
@@ -82,8 +101,10 @@
                 <img src="assets/images/train.jpg" alt="" class="responsive-img materialboxed" width="650">
             </div>
             <div class="col s12 l6 offset-l1">
-                <h2 class="white-text">Train Schedule</h2>
-                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda facere illum velit cupiditate quasi, ut ad, nesciunt dolore recusandae aliquid unde est saepe! Officiis adipisci dolor mollitia ipsam totam numquam!</p>
+                <a href="https://kyleoliveri.github.io/Train-Activity/" target="_blank" class="">
+                <h2 class="white-text appLink">Train Schedule</h2>
+                </a>
+                <p class="white-text">This is a train schedule application that demonstrates storing data on a Firebase server. When the user adds a new train to the schedule, the new schedule is appended to the list and added to the Firebase Server.</p>
             </div>
         </div>
     </section>
@@ -94,6 +115,74 @@
         </div>
     </div>
 
+    <section class="container section scrollspy white-text opac" id="contact">
+        <div class="row">
+            <h4>Contact Me</h4>
+            <form class="col s12">
+                <div class="row section">
+                    <div class="input-field col s12 l12">
+                        <input id="icon_prefix" type="text" class="validate white-text">
+                        <label for="icon_prefix">Name</label>
+                    </div>
+                    <div class="input-field col l12 s12">
+                        <input id="email" type="email" class="validate white-text">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="Please re-enter your email address">Helper text</span>
+                    </div>
+                    <div class="input-field col l12 s12">
+                        <input id="textarea1" type="text" class="white-text">
+                        <label for="textarea1">Message</label>
+                    </div>
+                    
+                    <a class="waves-effect waves-light" id="contactBtn2">Submit</a>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <div class="parallax-container">
+            <div class="parallax">
+                <img src="assets/images/slate2.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+
+    <footer class="page-footer black">
+            <div class="container">
+              <div class="row">
+                <div class="col l12 s12">
+                  <ul>
+                        
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright black">
+              <div class="container">
+              © 2019 Copyright Kyle Oliveri
+              <div class="right">
+                    <a href="https://www.linkedin.com/in/kyle-oliveri-b1b807115/" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/kyleoliveri" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-github-square fa-lg"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kyle_oliveri/" target="_blank" class="white-text">
+                        <i class="fontAwesome fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="assets/images/Resume - Kyle Oliveri 2019.pdf" target="_blank" class="white-text">
+                        <i class="fontAwesome fas fa-file-pdf fa-lg"></i>
+                    </a>
+              </div>
+              </div>
+            </div>
+          </footer>
+
+          <div class="fixed-action-btn">
+                <a href="#aboutMe" class="btn-floating btn-large black">
+                  <i class="large material-icons">arrow_drop_up</i>
+                </a>
+              </div>
 <!-- SCRIPTS -->
 
     <!-- jQuery -->

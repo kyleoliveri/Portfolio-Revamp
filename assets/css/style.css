@@ -8,10 +8,65 @@ header {
 body {
     background: black;
     font-family: 'Cinzel', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.opac {
+    opacity: .8;
+}
+
+.koImg {
+    height: 150px;
+    width: 150px;
+}
+
+.fontAwesome {
+    margin: 10px;
+}
+.fontAwesome:hover {
+    color: rgb(40, 67, 90);
+}
+
+.trans {
+    background: black;
+    opacity: .8;
+    height: 500px;
+}
+
+.push {
+    margin-top: 125px;
+}
+
+#contactBtn {
+    background: black;
+    color: rgb(40, 67, 90);
+    margin-top: 35px;
+    font-size: 28px;
+    padding: 10px;
+}
+
+#contactBtn:hover {
+    color: white;
+}
+
+#contactBtn2 {
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#contactBtn2:hover {
+    color: rgb(40, 67, 90);
+}
+
+.appLink:hover {
+    color: rgb(40, 67, 90);
 }
 
 .section {
-    /* background: rgba(11, 31, 49, 0.178); */
     padding-top: 4vw;
     padding-bottom: 4vw;
 }
