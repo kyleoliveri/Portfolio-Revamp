@@ -13,8 +13,12 @@ body {
     flex-direction: column;
 }
 
-.opac {
-    opacity: .8;
+main {
+    flex: 1 0 auto;
+  }
+
+.test {
+    margin-top: 45px;
 }
 
 .koImg {
@@ -30,25 +34,24 @@ body {
 }
 
 .trans {
-    background: black;
-    opacity: .8;
-    height: 500px;
+    background: rgba(0, 0, 0, 0.664);
+    min-height: 100px;
 }
 
 .push {
-    margin-top: 125px;
+    padding: 25px;
 }
 
 #contactBtn {
     background: black;
-    color: rgb(40, 67, 90);
+    color: white;
     margin-top: 35px;
     font-size: 28px;
     padding: 10px;
 }
 
 #contactBtn:hover {
-    color: white;
+    color: rgb(40, 67, 90);
 }
 
 #contactBtn2 {
@@ -62,6 +65,10 @@ body {
     color: rgb(40, 67, 90);
 }
 
+.navButtons:hover {
+    color: rgb(40, 67, 90);
+}
+
 .appLink:hover {
     color: rgb(40, 67, 90);
 }
@@ -69,6 +76,10 @@ body {
 .section {
     padding-top: 4vw;
     padding-bottom: 4vw;
+}
+
+.portfolioButton {
+    color: white;
 }
 
 @media screen and (max-width: 670px) {

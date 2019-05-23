@@ -34,16 +34,15 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#aboutMe" class="navButtons wav">About Me</a></li>
                     <li>|</li>
-                    <li><a href="#photos">Portfolio</a></li>
-                    <li>|</li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#photos" class="navButtons">Portfolio</a></li>
                 </ul>
-                <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#photos">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="sidenav black" id="mobile-menu">
+                    <div class="test">
+                        <li><a href="#aboutMe" class="navButtons white-text">About Me</a></li>
+                        <li><a href="#photos" class="navButtons white-text">Portfolio</a></li>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -61,16 +60,12 @@
                         <a href="https://github.com/kyleoliveri" target="_blank" class="white-text">
                             <i class="fontAwesome fab fa-github-square fa-2x"></i>
                         </a>
-                        <a href="https://www.instagram.com/kyle_oliveri/" target="_blank" class="white-text">
-                            <i class="fontAwesome fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="assets/images/Resume - Kyle Oliveri 2019.pdf" target="_blank" class="white-text">
+                        <a href="assets/images/Kyle Oliveri - Resume 2019.pdf" target="_blank" class="white-text">
                             <i class="fontAwesome fas fa-file-pdf fa-2x"></i>
                         </a>
                         <br>
                         <p>Hi, my name is Kyle and I am a web developer based in Los Angeles, CA. I have a passion for
-                            web design and developing applications for the web. Please get in touch with me if you have
-                            any questions!</p>
+                            creative design and developing convenient applications for the web. Lets get in touch!</p>
                         <a href="#contact" class="waves-effect waves-light" id="contactBtn">Contact Me</a>
                     </div>
                 </div>
@@ -78,87 +73,61 @@
         </div>
     </header>
 
-
-    <section class="container section scrollspy" id="photos">
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="assets/images/crystalCollector.jpg" alt="" class="responsive-img materialboxed" width="650">
-            </div>
-            <div class="col s12 l6 offset-l1">
-                <a href="https://kyleoliveri.github.io/Unit-4-Game/" target="_blank" class="appLink">
-                    <h2 class="white-text">Crystal Collector</h2>
-                </a>
-                <p class="white-text">This is a JavaScript-based web application I created called Crystal Collector. In
-                    this game, a random number is generated and random values are applied to each of the four crystals.
-                    It is up to the user to add up their total to equal the randomly generated number.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4 push-l7 offset-l1">
-                <img src="assets/images/nomad.jpg" alt="" class="responsive-img materialboxed" width="650">
-            </div>
-            <div class="col s12 l6 pull-l5 right-align offset-l1">
-                <a href="https://kyleoliveri.github.io/Group-Project-1/" target="_blank" class="appLink">
-                    <h2 class="white-text">Nomad</h2>
-                </a>
-                <p class="white-text">Nomad is a one-stop-shop solution for anyone traveling. The user can search any
-                    city and Nomad will display the current weather, recent news articles regarding the city, and any
-                    events through Ticketmaster. This web application was developed with a team and uses Javascript,
-                    Firebase, and APIs.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4">
-                <img src="assets/images/train.jpg" alt="" class="responsive-img materialboxed" width="650">
-            </div>
-            <div class="col s12 l6 offset-l1">
-                <a href="https://kyleoliveri.github.io/Train-Activity/" target="_blank" class="">
-                    <h2 class="white-text appLink">Train Schedule</h2>
-                </a>
-                <p class="white-text">This is a train schedule application that demonstrates storing data on a Firebase
-                    server. When the user adds a new train to the schedule, the new schedule is appended to the list and
-                    added to the Firebase Server.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="assets/images/slate.jpg" alt="" class="responsive-img">
-        </div>
-    </div>
-
-    <section class="container section scrollspy white-text" id="contact">
-        <div class="row">
-            <h4>Contact Me</h4>
-            <form class="col s12">
-                <div class="row section">
-                    <div class="input-field col s12 l12">
-                        <input id="icon_prefix" type="text" class="validate white-text">
-                        <label for="icon_prefix">Name</label>
-                    </div>
-                    <div class="input-field col l12 s12">
-                        <input id="email" type="email" class="validate white-text">
-                        <label for="email">Email</label>
-                        <span class="helper-text" data-error="Please re-enter your email address">Helper text</span>
-                    </div>
-                    <div class="input-field col l12 s12">
-                        <input id="textarea1" type="text" class="white-text">
-                        <label for="textarea1">Message</label>
-                    </div>
-
-                    <a class="waves-effect waves-light" id="contactBtn2">Submit</a>
+    <main>
+        <section class="container section scrollspy" id="photos">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="assets/images/GotTheories.png" alt="" class="responsive-img materialboxed" width="650">
                 </div>
-            </form>
-        </div>
+                <div class="col s12 l6 offset-l1">
+                    <a href="https://glacial-reaches-10483.herokuapp.com/" target="_blank" class="appLink">
+                        <h2 class="portfolioButton navButtons">GoT Theories?</h2>
+                    </a>
+                    <p class="white-text">GoT Theories is a fun interactive application for Game of Thrones fans to post
+                        their own theories, as well as comment on other users theories. This application was part of a
+                        group project in which I was primarily responsible for the front-end design and development.
+                        This application uses Materialize, CSS, jQuery, Handlebars.js, Node.js, Express, Firebase,
+                        MySQL, and Sequelize.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="assets/images/GifTastic.png" alt="" class="responsive-img materialboxed" width="650">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                    <a href="https://kyleoliveri.github.io/GifTastic/" target="_blank" class="appLink">
+                        <h2 class="portfolioButton navButtons">GifTastic</h2>
+                    </a>
+                    <p class="white-text">GifTastic is an enjoyable application that uses the Giphy API to pull gifs of
+                        your choosing. The user is greeted with pre-defined buttons for characters from The Office
+                        (because c'mon... who doesn't love The Office?). You can choose to view some Michael Scott gifs,
+                        or add your own button for gifs you would like to see! The gifs are paused by default and are
+                        enabled on click. GifTastic was created using Bootstrap, CSS, and jQuery.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="assets/images/train.jpg" alt="" class="responsive-img materialboxed" width="650">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <a href="https://kyleoliveri.github.io/Train-Activity/" target="_blank" class="">
+                        <h2 class="portfolioButton appLink navButtons">Train Schedule</h2>
+                    </a>
+                    <p class="white-text">This is a train schedule application that demonstrates storing data on a
+                        Firebase
+                        server. When the user adds a new train to the schedule, the new schedule is appended to the list
+                        and
+                        added to the Firebase Server.</p>
+                </div>
+            </div>
+        </section>
 
-    </section>
-
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="assets/images/slate2.jpg" alt="" class="responsive-img">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="assets/images/slate2.jpg" alt="" class="responsive-img">
+            </div>
         </div>
-    </div>
+    </main>
 
     <footer class="page-footer black opac">
         <div class="container">
@@ -173,10 +142,7 @@
                     <a href="https://github.com/kyleoliveri" target="_blank" class="white-text">
                         <i class="fontAwesome fab fa-github-square fa-lg"></i>
                     </a>
-                    <a href="https://www.instagram.com/kyle_oliveri/" target="_blank" class="white-text">
-                        <i class="fontAwesome fab fa-instagram fa-lg"></i>
-                    </a>
-                    <a href="assets/images/Resume - Kyle Oliveri 2019.pdf" target="_blank" class="white-text">
+                    <a href="assets/images/Kyle Oliveri - Resume 2019.pdf" target="_blank" class="white-text">
                         <i class="fontAwesome fas fa-file-pdf fa-lg"></i>
                     </a>
                 </div>
@@ -207,7 +173,7 @@
     </script>
 
     <!-- JavaScript -->
-    <script src="assets/javascript/app.js"></script>
+    <script src="./assets/javascript/app.js"></script>
 
 
 
