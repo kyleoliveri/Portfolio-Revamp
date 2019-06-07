@@ -7,7 +7,7 @@ header {
 
 body {
     background: black;
-    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display SC', serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -19,6 +19,14 @@ main {
 
 .test {
     margin-top: 45px;
+}
+
+.webDev {
+    font-family: monospace;
+}
+
+#gotTheories {
+    font-family: 'Cinzel', serif;
 }
 
 .koImg {
