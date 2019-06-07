@@ -17,6 +17,10 @@ main {
     flex: 1 0 auto;
   }
 
+  p {
+      font-size: 19px;
+  }
+
   #projects {
     background: rgba(40, 78, 90, 0.432);
     padding: 5px;
@@ -53,29 +57,6 @@ main {
 
 .push {
     padding: 25px;
-}
-
-#contactBtn {
-    background: black;
-    color: white;
-    margin-top: 35px;
-    font-size: 28px;
-    padding: 10px;
-}
-
-#contactBtn:hover {
-    color: rgb(40, 67, 90);
-}
-
-#contactBtn2 {
-    background: black;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-}
-
-#contactBtn2:hover {
-    color: rgb(40, 67, 90);
 }
 
 .navButtons:hover {
